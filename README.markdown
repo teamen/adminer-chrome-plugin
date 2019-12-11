@@ -12,10 +12,10 @@ A simple chrome extension for ADMINER that can override the logo to remind you w
 
     <img 
         style="width:200px;" 
-        src="https://raw.githubusercontent.com/teamen/adminer-chrome-plugin/master/setting.png"  alt="真棒" align="center"/>
+        src="https://raw.githubusercontent.com/teamen/adminer-chrome-plugin/master/setting.png"  alt="options.png" align="center"/>
 
 5. Done.
 
     <img 
         style="width:200px;" 
-        src="https://raw.githubusercontent.com/teamen/adminer-chrome-plugin/master/demo.jpg"  alt="真棒" align="center"/>
+        src="https://raw.githubusercontent.com/teamen/adminer-chrome-plugin/master/demo.jpg"  alt="demo.jpg" align="center"/>
