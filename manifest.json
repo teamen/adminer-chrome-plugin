@@ -1,0 +1,29 @@
+{
+  "name": "Adminer A+",
+  "author": "Wayne Tse <waynetsecn@gmail.com>",
+  "description": "Remind the Developer which environment is current login!",
+  "version": "1.0",
+  "options_page": "options.html",
+  "permissions": [
+      "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+          "http://*/adminer.php*", 
+          "http://*/adminer?*",
+          "https://*/adminer.php*", 
+          "http://*/adminer/*",
+          "https://*/adminer/*", 
+          "https://*/adminer?*"
+      ],
+      "css": ["index.css"],
+      "js": ["index.js"]
+    }
+  ],
+  "page_action": {
+      "default_title": "A+",
+      "default_icon": "icon.png"
+  },
+  "manifest_version": 2
+}

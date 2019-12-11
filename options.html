@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Adminer A+ Setting</title>
+    <style>
+      html,
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 0 auto;
+        width: 800px;
+        /* background: #dc3545; */
+        color: #333;
+      }
+      .setting-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+      }
+      .setting-block__title {
+        margin: 20px 0;
+        font-size: 1.5rem;
+      }
+      .setting-block__item {
+        display: flex;
+        line-height: 40px;
+      }
+      .setting-block__item:last-child {
+        margin-bottom: 10px;
+      }
+      .setting-block__item .server,
+      .setting-block__item .alias {
+        margin-right: 10px;
+        font-size: 1rem;
+      }
+      .setting-block__item .server label,
+      .setting-block__item .alias label {
+        margin-right: 4px;
+      }
+
+      .setting-block__item .btn-circle {
+        cursor: pointer;
+        display: inline-block;
+        background: transparent;
+        border: none;
+        padding: 0;
+        outline: none;
+        margin: 0 1px 0 2px;
+      }
+      .setting-block__item .btn-circle img {
+        width: 16px;
+        height: 16px;
+      }
+      input[type="text"] {
+        padding: 4px;
+        font-size: 1rem;
+        border-radius: 4px;
+        outline: none;
+        text-indent: 4px;
+        border: 1px solid #85afe1;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+          0 0 8px rgba(102, 175, 233, 0.6);
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075),
+          0px 0px 8px rgba(102, 175, 233, 0.6);
+        box-shadow: none;
+      }
+      .setting-block__btn-group {
+        display: flex;
+        margin-top: 20px;
+      }
+      .setting-block__btn-group .btn {
+        padding: 4px 10px;
+        background: transparent;
+        outline: none;
+        margin-left: 10px;
+        font-size: 0.8rem;
+        line-height: 150%;
+      }
+      .setting-block__btn-group .btn-info {
+        background-color: #17a2b8;
+        color: #fff;
+      }
+      .setting-block__btn-group .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+      }
+      .setting-block__btn-group .btn-outline-info:hover {
+        background-color: transparent;
+        border: 1px solid #17a2b8;
+        color: #17a2b8;
+      }
+      .setting-block__btn-group .btn-outline-primary:hover {
+        background-color: transparent;
+        border: 1px solid #007bff;
+        color: #007bff;
+      }
+      .setting-block__item--clone {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="setting-block">
+        <h2 class="setting-block__title">
+          Admin A+ Setting
+        </h2>
+        <div class="item-wrapper">
+          <!-- Wrapper -->
+        </div>
+
+        <div class="setting-block__item setting-block__item--clone">
+          <div class="server">
+            <label for="">
+              服务器:
+            </label>
+            <input
+              type="text"
+              placeholder="server"
+              class="server-input"
+              name="server[]"
+            />
+          </div>
+          <div class="alias">
+            <label for="">
+              别名:
+            </label>
+            <input
+              type="text"
+              placeholder="alias"
+              class="alias-input"
+              name="alias[]"
+            />
+            <a class="btn btn-circle btn-subtract  js-btn-subtract">
+              <img src="subtract.png" alt="" />
+            </a>
+            <!-- <a class="btn btn-circle btn-plus"><img src="plus.png" alt=""></a> -->
+          </div>
+        </div>
+
+        <div class="setting-block__btn-group">
+          <button class="btn btn-info btn-outline-info js-btn-add-setting-item">
+            添加设置项
+          </button>
+          <button
+            class="btn btn-primary btn-outline-primary js-btn-save-settings"
+          >
+            保存设置
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

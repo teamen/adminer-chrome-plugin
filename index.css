@@ -1,0 +1,38 @@
+#menu h1 {
+    position: relative;
+}
+
+#menu-extend {
+    /* height: 100%; */
+    /* width: 100%; */
+    /* display: block; */
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+div.menu-extend-prod {
+    background: purple!important;
+    color: #fff!important;
+}
+
+
+div.menu-extend-local {
+    background: #c3c5d8!important;
+    color: #fff!important;
+}
+
+div.menu-extend-dev {
+    color: #e2c2c2!important;
+    background: #ce4343!important;
+}
