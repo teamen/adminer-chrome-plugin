@@ -21,6 +21,11 @@
     justify-items: center;
 }
 
+div.menu-extend-default {
+    background: #c3c5d8!important;
+    color: #fff!important;
+}
+
 div.menu-extend-prod {
     background: purple!important;
     color: #fff!important;

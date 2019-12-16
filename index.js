@@ -30,7 +30,7 @@ chrome.storage.local.get("map", function(result) {
   }
   const alias = map[env] || params.server || "local";
   menuExtend.innerHTML = "ADMINER - " + alias.toUpperCase();
-  menuExtend.classList = "menu-extend-" + alias;
+  menuExtend.classList = "menu-extend-default menu-extend-" + alias;
   console.log(
     "%c ADMINER - A+  %c # " + alias.toUpperCase() + " ",
     "background:#aaa;color:green;font-size:20px;border-top-left-radius: 4px; border-bottom-left-radius:4px",
